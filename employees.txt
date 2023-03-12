@@ -1,0 +1,10 @@
+1001, John Doe, john.doe@example.com, 555-123-4567, 12-Feb-85, 6000
+1002, Jane Smith, jane.smith@example.com, 555-234-5678, 23-Sep-91, 7000
+1003, David Lee, david.lee@example.com, 555-345-6789, 17-May-88, 8000
+1004, Sarah Johnson, sarah.johnson@example.com, 555-456-7890, 30-Dec-86, 9000
+1005, Michael Lee, michael.lee@example.com, 555-567-8901, 05-Jul-89, 10000
+1006, Emily Rodriguez, emily.rodriguez@example.com, 555-678-9012, 10-Jan-93, 11000
+1007, Daniel Kim, daniel.kim@example.com, 555-789-0123, 28-Nov-87, 12000
+1008, Rachel Lee, rachel.lee@example.com, 555-890-1234, 07-Mar-90, 13000
+1009, Christopher Brown, christopher.brown@example.com, 555-901-2345, 16-Sep-92, 14000
+1010, Jennifer Davis, jennifer.davis@example.com, 555-012-3456, 02-May-84, 15000
