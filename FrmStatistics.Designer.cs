@@ -31,8 +31,9 @@
             label1 = new Label();
             btnTopPastMonth = new Button();
             btnCurrMonth = new Button();
-            btnTopSalary = new Button();
+            btnTopProjects = new Button();
             btnBack = new Button();
+            btnProjects = new Button();
             SuspendLayout();
             // 
             // label1
@@ -60,7 +61,7 @@
             // btnCurrMonth
             // 
             btnCurrMonth.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            btnCurrMonth.Location = new Point(233, 185);
+            btnCurrMonth.Location = new Point(233, 182);
             btnCurrMonth.Name = "btnCurrMonth";
             btnCurrMonth.Size = new Size(334, 40);
             btnCurrMonth.TabIndex = 8;
@@ -68,21 +69,21 @@
             btnCurrMonth.UseVisualStyleBackColor = true;
             btnCurrMonth.Click += btnCurrMonth_Click;
             // 
-            // btnTopSalary
+            // btnTopProjects
             // 
-            btnTopSalary.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            btnTopSalary.Location = new Point(233, 235);
-            btnTopSalary.Name = "btnTopSalary";
-            btnTopSalary.Size = new Size(334, 40);
-            btnTopSalary.TabIndex = 9;
-            btnTopSalary.Text = "Top 5 employees with the biggest monthly salaries";
-            btnTopSalary.UseVisualStyleBackColor = true;
-            btnTopSalary.Click += btnTopSalary_Click;
+            btnTopProjects.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            btnTopProjects.Location = new Point(233, 229);
+            btnTopProjects.Name = "btnTopProjects";
+            btnTopProjects.Size = new Size(334, 40);
+            btnTopProjects.TabIndex = 9;
+            btnTopProjects.Text = "Top 5 employees with the biggest monthly salaries";
+            btnTopProjects.UseVisualStyleBackColor = true;
+            btnTopProjects.Click += btnTopSalary_Click;
             // 
             // btnBack
             // 
             btnBack.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            btnBack.Location = new Point(329, 285);
+            btnBack.Location = new Point(330, 323);
             btnBack.Name = "btnBack";
             btnBack.Size = new Size(143, 30);
             btnBack.TabIndex = 10;
@@ -90,13 +91,25 @@
             btnBack.UseVisualStyleBackColor = true;
             btnBack.Click += btnBack_Click;
             // 
+            // btnProjects
+            // 
+            btnProjects.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            btnProjects.Location = new Point(233, 276);
+            btnProjects.Name = "btnProjects";
+            btnProjects.Size = new Size(334, 40);
+            btnProjects.TabIndex = 11;
+            btnProjects.Text = "Top 5 projects with the most tasks";
+            btnProjects.UseVisualStyleBackColor = true;
+            btnProjects.Click += btnProjects_Click;
+            // 
             // FrmStatistics
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnProjects);
             Controls.Add(btnBack);
-            Controls.Add(btnTopSalary);
+            Controls.Add(btnTopProjects);
             Controls.Add(btnCurrMonth);
             Controls.Add(btnTopPastMonth);
             Controls.Add(label1);
@@ -111,7 +124,8 @@
         private Label label1;
         private Button btnTopPastMonth;
         private Button btnCurrMonth;
-        private Button btnTopSalary;
+        private Button btnTopProjects;
         private Button btnBack;
+        private Button btnProjects;
     }
 }

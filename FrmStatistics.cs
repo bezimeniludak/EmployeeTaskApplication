@@ -74,14 +74,28 @@ namespace EmployeeTaskApplication
             employees = Globals.Employees;
 
             employees = employees.OrderByDescending(emp => emp.MonthlySalary).ToList();
-            var employeesTop5= employees.Take(5);
-            
+            var employeesTop5 = employees.Take(5);
+
             string message = "";
-            foreach(Employee emp in employeesTop5)
+            foreach (Employee emp in employeesTop5)
             {
                 message += $"{emp.FullName}: {emp.MonthlySalary}\n";
             }
             MessageBox.Show(message, "Top 5 earning employees");
+        }
+
+        private void btnProjects_Click(object sender, EventArgs e)
+        {
+            List<Project> projects = new List<Project>();
+            projects = Globals.Projects.OrderByDescending(p=>p.Tasks.Count()).ToList();
+            var projectsTop5 = projects.Take(5);
+
+            string message = "";
+            foreach (Project pro in projectsTop5)
+            {
+                message += $"{pro.Title}: {pro.Tasks.Count()}\n";
+            }
+            MessageBox.Show(message, "Top 5 projects with the most tasks");
         }
     }
 }
